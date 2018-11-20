@@ -1,3 +1,6 @@
+raml.rml
+swagger.yaml
+
 1) Crear la imagen docker
 docker build -t calculadora .
 
