@@ -1,0 +1,94 @@
+swagger: '2.0'
+info:
+  description: Calculadora API
+  title: Calculadora
+  version: v1
+host: localhost:8081
+schemes:
+  - https
+basePath: /api
+paths:
+  /sumar:
+    get:
+      summary: Retorna la suma de los valores ingresados
+      parameters:
+        - in: query
+          name: a
+          type: integer
+          description: 'Primer valor'
+        - in: query
+          name: b
+          type: integer
+          description: 'Segundo valor'
+      responses:
+        '200':
+          description: Success response
+          schema:
+            type: object
+            properties:
+              raspuesta:
+                type: integer
+                example: 88
+  /restar:
+    get:
+      summary: Retorna la resta de los valores ingresados
+      parameters:
+        - in: query
+          name: a
+          type: integer
+          description: 'Primer valor'
+        - in: query
+          name: b
+          type: integer
+          description: 'Segundo valor'
+      responses:
+        '200':
+          description: Success response
+          schema:
+            type: object
+            properties:
+              raspuesta:
+                type: integer
+                example: 88
+  /multiplicar:
+    get:
+      summary: Retorna la multiplicacion de los valores ingresados
+      parameters:
+        - in: query
+          name: a
+          type: integer
+          description: 'Primer valor'
+        - in: query
+          name: b
+          type: integer
+          description: 'Segundo valor'
+      responses:
+        '200':
+          description: Success response
+          schema:
+            type: object
+            properties:
+              raspuesta:
+                type: integer
+                example: 88
+  /dividir:
+    get:
+      summary: Retorna la division de los valores ingresados
+      parameters:
+        - in: query
+          name: a
+          type: integer
+          description: 'Primer valor'
+        - in: query
+          name: b
+          type: integer
+          description: 'Segundo valor'
+      responses:
+        '200':
+          description: Success response
+          schema:
+            type: object
+            properties:
+              raspuesta:
+                type: integer
+                example: 88
