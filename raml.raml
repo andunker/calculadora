@@ -1,0 +1,118 @@
+#%RAML 1.0
+---
+title: Calculadora
+baseUri: http://localhost:8181/api
+version: v1
+
+/sumar:
+    get:
+      description: Retorna la suma de los valores ingresados
+      queryParameters:
+        a:
+          displayName: a
+          type: number
+          description: Primer valor
+          example: 1
+          required: true
+        b:
+          displayName: b
+          type: number
+          description: Segundo valor
+          example: 2
+          required: true
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "data": {
+                    "respuesta": 88
+                  },
+                  "success": true,
+                  "status": 200
+                }
+/restar:
+    get:
+      description: Retorna la resta de los valores ingresados
+      queryParameters:
+        a:
+          displayName: a
+          type: number
+          description: Primer valor
+          example: 1
+          required: true
+        b:
+          displayName: b
+          type: number
+          description: Segundo valor
+          example: 2
+          required: true
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "data": {
+                    "respuesta": 88
+                  },
+                  "success": true,
+                  "status": 200
+                }
+/multiplicar:
+    get:
+      description: Retorna la multiplicacion de los valores ingresados
+      queryParameters:
+        a:
+          displayName: a
+          type: number
+          description: Primer valor
+          example: 1
+          required: true
+        b:
+          displayName: b
+          type: number
+          description: Segundo valor
+          example: 2
+          required: true
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "data": {
+                    "respuesta": 88
+                  },
+                  "success": true,
+                  "status": 200
+                }
+/dividir:
+    get:
+      description: Retorna la division de los valores ingresados
+      queryParameters:
+        a:
+          displayName: a
+          type: number
+          description: Primer valor
+          example: 1
+          required: true
+        b:
+          displayName: b
+          type: number
+          description: Segundo valor
+          example: 2
+          required: true
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "data": {
+                    "respuesta": 88
+                  },
+                  "success": true,
+                  "status": 200
+                }
